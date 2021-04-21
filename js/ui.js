@@ -30,7 +30,9 @@ UI.presentPlayerInfo = function() {
     html += '<td>'+ player.name +'</td><td>$'+ player.dollars +'</td>';
     html += '</tr>';
   }
-
+  html += '<tr class="'+'">';
+  html += '<td>Free Parking</td><td>$'+ Game.freeParkingDollars +'</td>';
+  html += '</tr>';
   html += '</table>';
 
   Game.dom.playerInfo.innerHTML = html;
