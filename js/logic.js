@@ -137,14 +137,14 @@ Game.bindEventListeners = function() {
               Game.players[0].ownedProperties.push(property);
               property.owned = true;
               property.ownedBy = Game.players[0].id;
-              UI.presentPlayerInfo();
+              UI.presentPropertyInfo();
             } else {
               r = confirm("Press OK if Player Two owns {0}".format([property.name]));
                 if (r == true) {
                   Game.players[1].ownedProperties.push(property);
                   property.owned = true;
                   property.ownedBy = Game.players[1].id;
-                  UI.presentPlayerInfo();
+                  UI.presentPropertyInfo();
                 } else {
                   property.owned = false;
                 }
