@@ -406,7 +406,7 @@ Game.getPlayerCount = function(prepend) {
 
 Game.createPlayers = function() {
 
-  var names = ['Tyler', 'Bob'];
+  var names = ['Player 1', 'Player 2'];
 
   for(var i=0;i<Game.playerCountHuman;i++){
     var name = names[i];
