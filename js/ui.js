@@ -118,6 +118,7 @@ UI.presentPropertyInfo = function() {
     html += '<td style="width:30px; background-color:{0}"></td>'.format([property.color]);
     html += '<td>{0}</td>'.format([property.name]);
     html += '<td>{0}</td>'.format([ownedBy]);
+    html += '<td>{0}</td>'.format([property.houseCount]);
     html += '</tr>';
 
 
