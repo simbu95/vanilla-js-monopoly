@@ -108,6 +108,12 @@ UI.presentPropertyInfo = function() {
   }
 
   var html = '<table>';
+  html += '<tr>';
+  html += '<td></td>';
+    html += '<td>Property</td>';
+    html += '<td>Owned By</td>';
+    html += '<td>Houses</td>';
+    html += '</tr>';
 
   for(var i=0; i<properties.length; i++){
     var property = properties[i];
