@@ -88,6 +88,8 @@ Game.cacheDom = function() {
   Game.dom.board = document.getElementById("board");
 
   Game.dom.actions = {};
+  Game.dom.actions.cash = document.getElementById("btn-set-cash");
+  Game.dom.actions.property = document.getElementById("btn-set-prop");
   Game.dom.actions.jailPay = document.getElementById("btn-jail-pay");
   Game.dom.actions.jailCard = document.getElementById("btn-jail-card");
   Game.dom.actions.buyHouses = document.getElementById("btn-houses");
@@ -173,7 +175,15 @@ Game.bindEventListeners = function() {
     }
 
   }
-
+  Game.dom.actions.cash.onclick = function() {
+    Game.players[0].dollars = parseInt(prompt("Enter Player One's Cash", 1500));
+    Game.players[1].dollars = parseInt(prompt("Enter Player Two's Cash", 1500));
+  }
+  
+  Game.dom.actions.property.onclick = function() {
+    alert("Not Implemented Yet");
+  }
+    
   Game.dom.actions.jailPay.onclick = function() {
 
     var activePlayer = Player.getActive();
